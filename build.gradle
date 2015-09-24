@@ -28,7 +28,7 @@ dependencies {
 
     compile 'org.slf4j:slf4j-jdk14:1.7.12'
     compile 'commons-codec:commons-codec:1.10'
-    compile 'org.irmacard.mno:irma_mno_common:0.1.0'
+    compile 'org.irmacard.metrics:irma_metrics_common:0.1.0'
 
     // Database support
     gretty 'commons-dbcp:commons-dbcp:1.4'
