@@ -7,3 +7,4 @@ bin
 .idea/
 *.iml
 metricsdb.h2.db
+metricsdb.lock.db
