@@ -91,6 +91,7 @@ public class MetricsResource {
         Connection conn = null;
 
         logger.info("Trying to insert ApplicationInformation {}", info);
+        logger.info("Application gets sessionToken {}", sessionToken);
         try {
             conn = ds.getConnection();
 
