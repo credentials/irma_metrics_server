@@ -126,6 +126,10 @@ public class MetricsResource {
         logger.info("Received measurement:\n{}", measurement);
         logger.info("From: {}", authorizationToken);
 
+        if (measurement == null) {
+            return Response.status(Status.BAD_REQUEST).build();
+        }
+
         String sessionToken = getSessionToken(authorizationToken);
 
         Connection conn = null;
@@ -171,6 +175,10 @@ public class MetricsResource {
             @HeaderParam("Authorization") String authorizationToken) {
         logger.info("Received aggregate:\n{}", aggregate);
         logger.info("From: {}", authorizationToken);
+
+        if (aggregate == null) {
+            return Response.status(Status.BAD_REQUEST).build();
+        }
 
         String sessionToken = getSessionToken(authorizationToken);
 
