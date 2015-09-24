@@ -20,7 +20,7 @@ The server provides the following three simple API calls: `register` to register
 
 During registration you send the static values that are not bound to change very often. Server stores record together with timestamp and returns a session token to authenticate future log entries.
 
-POST https://<server>/<api>/v1/register
+    POST https://<server>/<api>/v1/register
 
 Inputs:
 
@@ -97,7 +97,7 @@ We can use this session token as an authorization token in subsequent requests t
       -H "Authorization: Bearer DvfxOFv4tbKGZUFbGhOdbv86FengDRWMEKkz7XYF+qmR" \
       -d '{
             "key": "verification_time",
-            "value": 22.3,
+            "value": 22.3
           }'
 
 and aggregates
