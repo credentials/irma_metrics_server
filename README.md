@@ -1,8 +1,10 @@
+# IRMA metrics server
+
 The IRMA metrics server is a simple server that keeps track of metrics for our deployed applications. The metrics are collated on the client side, only aggregates are send to the server.
 
 # Running the server
 
-The gradle build file should take care of most of the dependencies. To run the server in development mode simply call:
+The gradle build file should take care of the dependencies. To run the server in development mode simply call:
 
     gradle appRun
 
